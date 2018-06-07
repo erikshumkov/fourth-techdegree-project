@@ -15,7 +15,7 @@ const imgLinks = imgContainer.querySelectorAll('a');
 searchBar.addEventListener("keyup", () => {
   let results = searchBar.value.toUpperCase();
 
-    for ( let i = 0; i <= 11; i += 1 ) {
+    for ( let i = 0; i < imgLinks.length; i += 1 ) {
         let imgTitle = imgLinks[i].getAttribute("data-title").toUpperCase();
         if ( imgTitle.indexOf(results) > -1 ) {
         imgLinks[i].style.display = "inline";
